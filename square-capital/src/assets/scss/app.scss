@@ -1,6 +1,14 @@
 @import 'settings';
 @import 'foundation-emails';
 
+td {
+  word-break: keep-all;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
 .colored {
   background-color: $success-color;
   img {
@@ -10,15 +18,19 @@
 
 h2 {
   font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 0.2px;
   color: $black;
 }
 
 h1 {
   max-width: 400px;
   margin: 0 auto;
+  font-family: 'esqmarket', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2px;
   line-height: 36px;
-  font-family: 'esqmarket-medium';
-  color: $black;
+  color: #000;
 }
 
 .ul {
@@ -48,7 +60,7 @@ h1 {
     letter-spacing: 1px;
 
     &.dark {
-      font-weight: bolder;
+      font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
       color: $secondary-color;
     }
   }
@@ -56,12 +68,28 @@ h1 {
 
 div.colored,
 div.footer {
-  width: $global-width-small;
+  width: 90%;
+}
+
+div.colored {
+  padding-bottom: 44px;
+}
+
+div.footer {
+  padding-top: 31px;
 }
 
 @media screen and (min-width: $global-breakpoint) {
   div.colored,
   div.footer {
     width: auto;
+  }
+
+  div.colored {
+    padding-bottom: 40px;
+  }
+
+  div.footer {
+    padding-top: 33px;
   }
 }
