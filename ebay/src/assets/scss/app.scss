@@ -36,16 +36,23 @@ td {
 // }
 
 .logos {
+  height: 23px;
+
+  img,
+  a {
+    display: inline-block;
+  }
+
   .logos-separator {
-    display: block;
-    width: 1px;
+    // width: 1px;
+    padding-right: 17px;
+    display: inline-block;
     height: $global-line-height;
-    margin: 0 auto;
-    background-color: $medium-gray;
+    border-right: 1px solid $medium-gray;
   }
 
   .second-logo {
-    margin-left: 6px;
+    padding-left: 12px;
   }
 }
 
