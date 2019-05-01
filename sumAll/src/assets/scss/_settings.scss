@@ -23,19 +23,19 @@ $alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #aaaaaa;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #333;
 $white: #fff;
 $pre-color: #ff6908;
 $global-width: 520px;
-$global-width-small: 95%;
-$global-gutter: 16px;
+$global-width-small: 88%;
+$global-gutter: 0;
 $body-background: $white !important;
 $container-background: $white !important;
 $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 4px;
 $global-rounded: 500px;
-$global-breakpoint: $global-width + $global-gutter;
+$global-breakpoint: $global-width + 30px;
 
 // 2. Grid
 // -------
@@ -96,7 +96,7 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
-  default: 16px 21px 16px 21px,
+  default: 13px 19px,
   large: 10px 20px 10px 20px
 );
 $button-font-size: (
