@@ -16,35 +16,14 @@ td {
   background-color: $primary-color;
 }
 
-// .logos {
-//   img,
-//   a {
-//     display: inline-block;
-//   }
-
-//   a:not(.logos-separator) {
-//     padding: 0 14px;
-
-//     &:first-child {
-//       padding-left: 0;
-//     }
-
-//     &:last-child {
-//       padding-right: 0;
-//     }
-//   }
-// }
-
 .logos {
   height: 23px;
 
-  img,
-  a {
-    display: inline-block;
+  .first-logo {
+    width: 87px;
   }
 
   .logos-separator {
-    // width: 1px;
     padding-right: 17px;
     display: inline-block;
     height: $global-line-height;
