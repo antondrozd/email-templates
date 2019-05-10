@@ -1,0 +1,138 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@media (min-width: $global-breakpoint) {
+  @for $i from 0 through 50 {
+    .spacer.lg-#{$i} td {
+      font-size: ($i + px) !important;
+      line-height: ($i + px) !important;
+      height: ($i + px) !important;
+    }
+  }
+}
+
+td {
+  word-break: keep-all;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+.header {
+  background: $primary-color;
+}
+
+.logo-text {
+  display: block;
+  font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
+  line-height: 32px;
+  text-align: center;
+}
+
+table.button table td a {
+  font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+  font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
+  font-style: 14px;
+}
+
+.ul {
+  .li {
+    td {
+      padding-bottom: 13px;
+      font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
+    }
+  }
+
+  .icon {
+    width: 17px;
+    padding-top: 4px;
+    padding-right: 20px;
+  }
+}
+
+.text-color-secondary {
+  color: $secondary-color;
+}
+
+.bold {
+  font-family: 'esqmarket-bold', Helvetica, Arial, sans-serif;
+}
+
+table.body .divider {
+  height: 2px !important;
+  padding: 0 $global-gutter;
+  background-image: linear-gradient(
+    to right,
+    #adb1b5 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+  @media only screen and (max-width: $global-breakpoint) {
+    height: 2px !important;
+    padding: 0 $global-gutter;
+  }
+}
+
+small {
+  line-height: 20px;
+  // font-weight: 300;
+  // letter-spacing: 0.1px;
+}
+
+.footer {
+  background-color: $light-gray;
+  * {
+    font-size: 11px !important;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    &.dark {
+      font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif;
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+table.callout {
+  width: 100%;
+}
+
+.icons {
+  a {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  a.first {
+    padding-left: 0;
+  }
+
+  a.last {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: $global-breakpoint) {
+  h1 {
+    padding: 0 75px !important;
+  }
+}
