@@ -1,0 +1,142 @@
+@import 'settings';
+@import 'foundation-emails';
+
+td {
+  word-break: keep-all;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+.decorative-divider {
+  width: 100%;
+  height: 4px;
+  margin: 0;
+  background-color: $primary-color;
+}
+
+.logos {
+  height: 23px;
+
+  .first-logo {
+    width: 67px;
+  }
+
+  .logos-separator {
+    padding-right: 17px;
+    display: inline-block;
+    height: $global-line-height;
+    border-right: 1px solid $medium-gray;
+  }
+
+  .second-logo {
+    padding-left: 14px;
+  }
+}
+
+h2,
+h3 {
+  font-weight: bold;
+  color: #333333;
+}
+
+h2 {
+  line-height: 25px;
+}
+
+.ul {
+  .li {
+    td {
+      padding-bottom: 9px;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    padding-top: 2px;
+    padding-right: 12px;
+  }
+}
+
+a {
+  font-weight: bold;
+}
+
+.divider {
+  border-bottom: 1px solid #dddddd;
+}
+
+.about {
+  p {
+    padding-bottom: 33px;
+    font-family: 'esqmarket', Helvetica, Arial, sans-serif !important;
+  }
+
+  h2 {
+    font-family: 'esqmarket-medium', Helvetica, Arial, sans-serif !important;
+  }
+
+  .last {
+    p {
+      padding-bottom: 0;
+    }
+  }
+}
+
+small {
+  line-height: 18px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer {
+  small {
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+  .uppercase {
+    line-height: 18px;
+    letter-spacing: 0.04px;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: inherit;
+  }
+  .lh-smaller {
+    line-height: 17px;
+  }
+}
+
+.number-icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+  font-family: 'esqmarket', Helvetica, Arial, sans-serif !important;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 27px;
+  text-align: center;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: $global-breakpoint) {
+  .about {
+    p {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .steps {
+    p {
+      padding-right: 150px !important;
+    }
+  }
+}
