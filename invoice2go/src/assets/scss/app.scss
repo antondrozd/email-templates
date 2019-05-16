@@ -20,18 +20,27 @@ td {
   height: 23px;
 
   .first-logo {
-    width: 71px;
+    position: relative;
+    top: -3px;
+    img {
+      padding-right: 7px;
+    }
   }
 
   .logos-separator {
-    padding-right: 16px;
+    padding-right: 18px;
     display: inline-block;
     height: $global-line-height;
-    border-right: 1px solid rgba(#aaa, 0.4);
+    border-left: 1px solid rgba(#aaa, 0.4);
   }
 
   .second-logo {
-    padding-left: 15px;
+    position: relative;
+    left: -3px;
+    width: 86.63px;
+    img {
+      width: 86.63px;
+    }
   }
 }
 
