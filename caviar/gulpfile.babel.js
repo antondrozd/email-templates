@@ -12,6 +12,7 @@ import path     from 'path';
 import merge    from 'merge-stream';
 import beep     from 'beepbeep';
 import colors   from 'colors';
+import prettyhtml from 'gulp-pretty-html'
 
 const $ = plugins();
 
@@ -94,6 +95,7 @@ function images() {
 function inline() {
   return gulp.src('dist/**/*.html')
     .pipe($.if(PRODUCTION, inliner('dist/css/app.css')))
+    .pipe(prettyhtml({indent_size: 2}))
     .pipe(gulp.dest('dist'));
 }
 
