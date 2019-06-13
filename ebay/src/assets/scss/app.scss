@@ -1,6 +1,16 @@
 @import 'settings';
 @import 'foundation-emails';
 
+@media (min-width: $global-breakpoint) {
+  @for $i from 0 through 50 {
+    .spacer.lg-#{$i} td {
+      font-size: ($i + px) !important;
+      line-height: ($i + px) !important;
+      height: ($i + px) !important;
+    }
+  }
+}
+
 td {
   word-break: keep-all;
   -moz-hyphens: none;
